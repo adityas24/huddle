@@ -1,0 +1,116 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+:root {
+  --primary: #ff52bf;
+  --pale-cyan: #ebfbff;
+  --dark-cyan: #00252e;
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+/* --------------------------- */
+/* *UTILITIES */
+.flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.btn{
+    padding: 1.5rem 5rem;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+
+}
+
+.btn--primary {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.btn--white{
+    background-color: #fff;
+    color: #000;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid--2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-family: 'Poppins', sans-serif; 
+}
+
+/* --------------------------- */
+/* *HEADER */
+.page-header {
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-size: cover;
+    background-color: var(--pale-cyan);
+    /* background-position: center; */
+    padding-top: 3rem;
+}
+
+.nav {
+    margin-bottom: 4.5rem;
+}
+
+.nav .btn {
+
+}
+
+.logo {
+    height: 3rem;
+}
+
+.header-image img{
+    width: 100%;
+}
+
+.header-text-box{
+    padding-right: 5rem;
+}
+
+.header-text-box h1 {
+   font-size: 5rem;
+   margin-bottom: 2rem;
+}
+
+.header-text-box p{
+    margin-bottom: 3rem;
+}
