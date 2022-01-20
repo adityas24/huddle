@@ -47,6 +47,10 @@ body {
   justify-self: start;
 }
 
+.justify-items-center{
+  justify-items: center;
+}
+
 .align-center {
   align-items: center;
 }
@@ -179,5 +183,27 @@ h2 {
 
 .section-blocks .container > * + * {
   margin-top: 4rem;
+}
+
+
+/* --------------------------------- */
+/* *SECTION CTA */
+
+.cta-box {
+  display: grid;
+  justify-items: center;
+  padding: 4.5rem 0rem;
+  margin-top: 5rem;
+  width: 55%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px .1px rgba(0, 0, 0, .15);
+}
+
+.cta-box h2 {
+  margin-bottom: 2.5rem;
+}
+
+.cta-box button {
+  transform: scale(1.2);
 }
 
