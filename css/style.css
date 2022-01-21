@@ -24,7 +24,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  height: 20000px;
 }
 
 .container {
@@ -37,6 +36,10 @@ body {
 /* *UTILITIES */
 .flex {
   display: flex;
+}
+
+.column {
+  flex-direction: column;
 }
 
 .justify-between {
@@ -60,6 +63,12 @@ body {
   border: none;
   border-radius: 100px;
   font-weight: 700;
+  box-shadow: 0px 0px 8px .1px rgba(0, 0, 0, .15);
+ font-size: 1.5rem;
+}
+
+.btn:hover {
+   filter: brightness(190%);
 }
 
 .btn--primary {
@@ -69,7 +78,7 @@ body {
 
 .btn--white {
   background-color: #fff;
-  color: #000;
+  color: rgb(211, 118, 118);
 }
 
 .grid {
@@ -197,6 +206,10 @@ h2 {
   width: 55%;
   border-radius: 8px;
   box-shadow: 0px 0px 8px .1px rgba(0, 0, 0, .15);
+  transform: translateY(7rem);
+  z-index: 100;
+  position: relative;
+  background-color: #fff;
 }
 
 .cta-box h2 {
@@ -205,5 +218,95 @@ h2 {
 
 .cta-box button {
   transform: scale(1.2);
+}
+
+/* ---------------------------- */
+/* *FOOTER */
+
+.footer {
+  font-size: 1.4rem;
+  background-color: var(--dark-cyan);
+  color: var(--pale-cyan);
+  font-weight: 400;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  position: relative;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 1fr 1fr;
+}
+
+.footer-logo{
+  grid-column: 1/-1;
+  height: 3rem;
+  width: auto;
+  margin-bottom: 2.5rem;
+}
+
+.footer-col{
+  gap: 2rem;
+}
+
+.info-col div img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.address p{
+  width: 80%;
+}
+
+.address, .phone, .mail {
+  gap: 2rem;
+}
+
+.nav-col {
+  align-items: flex-start;
+}
+
+.nav-col a{
+  border: 1px solid transparent;
+}
+
+.copyright {
+  grid-column: 4/5;
+  font-size: 1.1rem;
+}
+
+.footer a:link, .footer a:visited {
+  text-decoration: none;
+  color: var(--pale-cyan);
+  transition: all .4s;
+}
+
+.social-col {
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.social-icon {
+  height:1.7rem;
+  width: 1.7rem;
+}
+
+.social-col a {
+  padding: .8rem;
+  border: 1px solid var(--pale-cyan);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-col a:hover {
+  border-bottom: 1px solid var(--pale-cyan);
+  
+}
+
+.social-col a:hover {
+ color: var(--primary);
+ border-color: currentColor;
 }
 
