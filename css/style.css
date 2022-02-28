@@ -1,7 +1,7 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif; */
 :root {
-  --primary: #ff52bf;
+  --primary: #ff6c52;
   --pale-cyan: #ebfbff;
   --dark-cyan: #00252e;
   --grayish-blue: hsl(208, 11%, 55%);
@@ -183,8 +183,6 @@ h2 {
 .block-img--2 {
   justify-self: start;
 }
-
-
 
 .section-blocks .container > * + * {
   margin-top: 4rem;
